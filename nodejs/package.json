@@ -1,0 +1,6 @@
+{ 
+    "name" : "Socket.IO-Chat", 
+    "version" : "0.0.1", 
+    "description" : "Some text here", 
+    "main" : "app.js"
+}
