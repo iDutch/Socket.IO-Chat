@@ -1,10 +1,7 @@
 # Config files
 config/DBConfig.php
 config/MemcachedConfig.php
+config/Config.php
 
 # NodeJS modules
 nodejs/node_modules/*
-
-# Other stuff which might can be removed
-node_latest_armhf.deb
-npm-debug.log

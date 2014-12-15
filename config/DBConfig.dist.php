@@ -14,11 +14,9 @@
 class DBConfig {
 
     const DB_HOST = 'dbhost';
-    const DB_PORT = 3306;
+    const DB_PORT = 3306; //Default
     const DB_USER = 'dbuser';
     const DB_PASS = 'dbpassword';
-    const DB_NAME = 'chatserver';
-    
-    const DB_SALT = 'Wh4t1s4s4lt?';
+    const DB_NAME = 'dbname';
 
 }

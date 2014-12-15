@@ -1,6 +1,7 @@
 <?php
 require('inc/MemcachedSessionHandler.php');
 require('inc/DBAdapter.php');
+require('../config/Config.php');
 require('../config/DBConfig.php');
 require('../config/MemcachedConfig.php');
 
@@ -26,7 +27,7 @@ if (isset($_POST['login'])) {
         $result = $DB->select('SELECT id, nickname FROM users WHERE (email = :email OR nickname = :nickname) AND password = :password', array(
             'email' => $_POST['loginname'],
             'nickname' => $_POST['loginname'],
-            'password' => hash('sha256', $_POST['password'].DBConfig::DB_SALT),
+            'password' => hash('sha256', $_POST['password'].Config::SALT),
         ));
         if(count($result)) {
             $_SESSION['user_id'] = $result[0]->id;
